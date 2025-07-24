@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'astreax-angular-app'`, () => {
+  it(`should have as title 'central-flow-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('astreax-angular-app');
+    expect(app.title).toEqual('central-flow-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('astreax-angular-app app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('central-flow-app app is running!');
   });
 });
